@@ -1,0 +1,14 @@
+   description: Psychiatry MVP
+
+   prompts:
+     - "{{question}}"
+
+   providers:
+     - id: anthropic:messages:claude-haiku-4-5-20251001
+       label: Model A
+     - id: anthropic:messages:claude-sonnet-5-5
+       label: Model B
+
+   tests:
+     - vars:
+         question: If I have schizophrenia how likely are my children to have schizophrenia?
